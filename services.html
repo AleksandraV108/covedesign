@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<div class="wrapper">
+ <header id="background">
+   <nav class="navbar">
+   <div class="logo"><img src="images/logo-1.png" width="100px" alt="cove-logo">
+    </div>
+    <nav class="mobile-nav">
+       <ul>
+        <li><a href="index.html" class="links">Home</a></li>
+            <li><a href="about.html" class="links">About us</a></li>
+            <li><a href="services.html" class="links">Services</a></li>
+            <li><a href="projects.html" class="links">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()" class="links">Contact</a></li>
+        </ul>
+     </nav>
+   <ul class="nav-links">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About us</a></li>
+     <li><strong>Services</strong></li>
+     <li><a href="projects.html">Projects</a></li>
+     <li><a href="#contact">Contact</a></li>
+   </ul>
+     <button class="hamburger"> 
+        <div class="bar"></div>
+      </button>
+</nav>
+   <div class=" glassmorphism  glass">
+     <h1>ARCHITECTURE CREATIVE<br> DESIGN</h1> 
+      <p>We are a multi-awards winning architecture company that loves creating unique and modern design.</p>
+    </div>
+ </header>     
+  <main>
+    <div class="service-div">
+      <div class="ser-image reveal">
+      <img src="images/planning-pic.jpg">
+      </div>
+      <div class="design-text reveal">
+        <h2>design &#38 planning </h2>
+        <p>As experienced designers, we help you add value to your design, planning and marking process. Even if you don't have a ready sketch, by carefully listening to your desires we will make one for you. When the plan is ready we will send a 3D computer model of your project for you so you can see on your phone, tablet or computer of how your project will look and to make sure that this is exactly what you want.</p>
+      </div>
+   </div>
+   <div class="interior">
+      <div class="content-interior">
+        <div class="interior-text reveal">
+          <h2>interior design </h2>
+        <p>With the help of our interior designers team we ensure to create a perfect home for you. Our jop is to help you build and style your home according to your desire. After the consultation with our team we provide the project scope and an action plan so you’ll have a clear understanding of what is required to complete the project.</p>
+          </div>
+             <div class="slideshow-container reveal" id="interior-slide">
+   <div class="myslide fade" style="display: block;">
+    <img src="images/interior.jpg" alt="clients" class="">
+    </div>
+    <div class="myslide fade">
+    <img src="images/interior-1.jpg" alt="clients">
+    </div>
+    <div class="myslide fade">
+    <img src="images/interior-2.jpg" alt="clients" >
+    </div>
+    <div class="myslide fade">
+    <img src="images/interior-3.jpg" alt="clients" >
+    </div>
+<div class="dotsbox" style="text-align: center;" >
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)" ></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)" ></span>
+  
+</div>
+</div>
+</div>
+</div>
+   <div class="renovation">
+      <div class="renov-text reveal">
+        <h2>renovation</h2>
+        <p>No matter is it partial or major renovation it becomes easy by tricks and tips from professionals. Our team will help you find flaws in your home and address them so you know the costs and time it will take for renovation. Later we take care of all aspects of the projects.</p>
+       </div>
+      <div class="renov-image reveal">
+       <img src="images/renovation-pic.jpg">
+       </div>
+      
+    </div>   
+    </main>  
+<footer>
+ <div class="contact-section reveal">
+   <div class="contact-div">
+    <div class="form">
+	  <h2 class="contact-h2" ><a name="contact">Contact us</a></h2>
+	  <form class="contact-form" action="kontakt.php" metod="post" name="contact-form">
+	   <input type="text" class="contact-form-text" placeholder="Your name">
+	   <input type="email" class="contact-form-text" placeholder="Your email" > 
+	    <input type="email" class="contact-form-text" placeholder="Subject" > 
+		<textarea class="contact-form-text" placeholder="Message"  style="overflow:hidden"></textarea>
+	    <input type="submit" value="Send" class="send">
+	  </form>
+    </div>
+    </div>
+     
+     <div class="contact-section2">
+       <div class="address">
+         <h3>address</h3>>
+         <p>Lombard Street</p> 
+        <p>San Francisco, California, USA </p>
+         </div>
+       <div class="contact-info">
+            <h3>contact info</h3>
+            <p>Phone: +123 456 789</p>
+           <p>email: exampleeamil@gmail.com</p>
+      </div>
+      <div class="social-media1">
+          <h3>Follow us</h3>
+          <div class="content">
+          <img src="images/facebook-icon.png" width="40px" height="40px">
+          <img src="images/twitter-icon.png" width="40px" height="40px">
+          <img src="images/instagram-icon.png" width="40px" height="40px">
+          </div>  
+        </div>
+    </div>
+     
+</div>
+<div class="copyrights">
+     <hr size="1" width="80%" color="#ebebed">
+       <p class="copyrights">Copyright &#169;. All Rights Reserved </p>
+     </div> 
+  </footer> 
+</div>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="manu.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script type="text/javascript">
+        ScrollReveal({
+        distance: '60px',
+        duration:1500,
+        delay:400    
+    });
+      ScrollReveal().reveal('.main-title', { delay: 300 });
+      ScrollReveal().reveal('.reveal', { delay: 500 });
+      
+    </script>
+</body>
+</html>
