@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+</head>
+
+<body>
+<div class="wrapper">
+ <header id="background">
+   <nav class="navbar">
+  <div class="logo"><img src="Images/logo-1.png" width="100px" alt="cove-logo">
+    </div>
+    <nav class="mobile-nav">
+       <ul>
+        <li><a href="index.html" class="links">Home</a></li>
+            <li><a href="about.html" class="links">About us</a></li>
+            <li><a href="services.html" class="links">Services</a></li>
+            <li><a href="projects.html" class="links">Projects</a></li>
+            <li><a href="#contact" class="links" onclick="closeMenu()">Contact</a></li>
+        </ul>
+     </nav>
+   <ul class="nav-links">
+     <li><a href="index.html">Home</a></li>
+       <li><strong>About us</strong></li>
+     <li><a href="services.html">Services</a></li>
+     <li><a href="projects.html">Projects</a></li>
+     <li><a href="#contact">Contact</a></li>
+   </ul>
+     <button class="hamburger"> 
+        <div class="bar"></div>
+      </button>
+</nav>
+   <div class=" glassmorphism  glass">
+     <h1>ARCHITECTURE CREATIVE<br> DESIGN</h1> 
+      <p>We are a multi-awards winning architecture company that loves creating unique and modern design.</p>
+    </div>
+ </header>     
+  <main>
+    <div class="about-us">
+      <div class="about-images scrollFade">
+        <img src="Images/architects-designers.jpg">
+      </div>
+      <div class="text-div scrollFade">
+         <h2>About us</h2>
+         <p>Cove arhitecture company was established 1997 in San Francisco, USA and is a team of architectures, designers, engeenires and planners with high-quality skills with a goal to create modern, unique aesthetically stunning designs and solutions for our clients.As a full-time company we are present on projects from start to finish ensuring that the ideas and desires from our clients are manifest at the end. With our knowledge and attention to details we want to help everyone to get the result they dreamet of.</p>
+        
+      </div>
+     </div>
+    <div class="experiance scrollFade">
+          <h2>25</h2>
+          <p>years of experiance</p>
+    </div>
+    <div class="about-us1 scrollFade">
+      <div class="text-div">
+        <h2 >Working together to build<br> a better future</h2>
+        <p>We believe that great works are born from respectful and collaborative relationships this is why our secret of success is working closely with our clients to better understand their desires. </p>
+      </div>
+      <div class="about-images scrollFade"><img src="Images/work-together.jpg"></div>
+      
+    </div>
+    
+    </main>  
+ <footer>
+ <div class="contact-section">
+   <div class="contact-div scrollFade">
+    <div class="form">
+	  <h2 class="contact-h2" ><a name="contact">Contact us</a></h2>
+	  <form class="contact-form" action="kontakt.php" metod="post" name="contact-form">
+	   <input type="text" class="contact-form-text" placeholder="Your name">
+	   <input type="email" class="contact-form-text" placeholder="Your email" > 
+	    <input type="email" class="contact-form-text" placeholder="Subject" > 
+		<textarea class="contact-form-text" placeholder="Message"  style="overflow:hidden"></textarea>
+	    <input type="submit" value="Send" class="send">
+	  </form>
+    </div>
+    </div>
+     
+     <div class="contact-section2 scrollFade">
+       <div class="address">
+         <h3 class="address-h3">address</h3>>
+         <p>Lombard Street</p> 
+        <p>San Francisco, California, USA </p>
+         </div>
+       <div class="contact-info scrollFade">
+            <h3 >contact info</h3>
+            <p>Phone: +123 456 789</p>
+           <p>email: exampleeamil@gmail.com</p>
+      </div>
+      <div class="social-media1 scrollFade">
+          <h3>Follow us</h3>
+          <div class="content">
+          <img src="Images/facebook-icon.png" width="40px" height="40px">
+          <img src="Images/twitter-icon.png" width="40px" height="40px">
+          <img src="Images/instagram-icon.png" width="40px" height="40px">
+          </div>  
+        </div>
+    </div>
+     
+</div>
+<div class="copyrights">
+     <hr size="1" width="80%" color="#ebebed">
+       <p class="copyrights">Copyright &#169;. All Rights Reserved </p>
+     </div> 
+  </footer> 
+</div>
+<script  type="text/javascript" src="js/manu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/scrollfade-0.1.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</body>
+</html>
